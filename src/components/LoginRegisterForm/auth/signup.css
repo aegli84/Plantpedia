@@ -22,7 +22,7 @@ body {
     width: 35vw;
     height: 50vh;
     padding: 1.8vw;
-    margin-top: 5vw;
+    margin-top: 11vw;
     border-radius: .5rem;
     box-shadow: 0 10px 30px black;
 }
@@ -46,7 +46,7 @@ h3 {
 }
 
 .headers {
-    margin-top: 5vw;
+    margin-top: 8vw;
     padding: 3vw;
     color: whitesmoke;
 }
@@ -64,7 +64,7 @@ h3 {
 .btn-pass {
     width: 10vw;
     height: 5vh;
-    margin-top: 26vw;
+    margin-top: 32vw;
     margin-left: -22vw;
     color: whitesmoke;
 }

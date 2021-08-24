@@ -3,14 +3,14 @@
 }
 
 .main{
-    height: 65.5vh;
+    height: 100vh;
 }
 .secondDiv{
     display: flex;
 }
 
 .header{
-    margin-top: 5vw;
+    margin-top: 11vw;
     margin-left: 7vw;
     padding: 3vw;
     color: whitesmoke;
@@ -20,7 +20,7 @@
     width: 35vw;
     height: 50vh;
     padding: 1.8vw;
-    margin-top: 5vw;
+    margin-top: 13vw;
     margin-left: 8vw;
     border-radius: .5rem;
     box-shadow: 0 10px 30px black;
@@ -63,7 +63,7 @@
 .btn-forgot {
     width: 10vw;
     height: 5vh;
-    margin-top: 26vw;
+    margin-top: 34vw;
     margin-left: -22vw;
     color: whitesmoke;
 }

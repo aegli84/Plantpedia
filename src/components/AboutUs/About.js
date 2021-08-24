@@ -33,9 +33,10 @@ const SummaryText = styled.p`
     margin: auto;
     margin-top: 0.8vw;
     padding: 0.5vw;
+    color: whitesmoke;
     font-family: 'Montserrat', Sans serif;
     font-size: 0.8rem;
-    font-weight: 200;
+    font-weight: 400;
     border: 1px solid grey;
     background-color: grey;
     border-radius:5px 20px 5px;

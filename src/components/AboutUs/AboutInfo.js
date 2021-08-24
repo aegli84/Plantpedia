@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import {FaQuoteLeft} from 'react-icons/fa';
+import {FaQuoteRight} from 'react-icons/fa';
 import AboutPage from '../../components/AboutUs/About';
 import maria from '../../assets/aboutUsimg/maria.png';
 import nick from '../../assets/aboutUsimg/nick.png';
@@ -59,10 +61,11 @@ const Paragraph = styled.p `
     border: 1px solid black;
     background-color: grey;
     border-radius: 5px 20px 5px;
-    padding: 1vw;
+    padding: 3vw;
     font-family: 'Montserrat', Sans serif;
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 700;
+    color: whitesmoke;
     @media(max-width: 770px) {
         margin-left: 18vw;
         margin-top: 50vw;
@@ -92,7 +95,23 @@ function AboutUsUi () {
                 </div>
             </Box>
         
-                    <Paragraph>asndniducdaksdsggrgdrgdfgdfgdfgdfgdfgdflchbsuzgf</Paragraph>
+                    <Paragraph>
+                        <FaQuoteLeft/>
+Welcome to Plantpedia, your number one source for plant caring and guidelines.
+We 're dedicated to providing you the very best of tips and advice, with an emphasis on plant caring.
+As students in Digital Career Institute , we had this awesome idea to make a platform for other plant lovers, like ourselves and at the same time
+enjoy coding.
+We hope you enjoy our products as much as we enjoy offering them to you.If you have any questions or comments, 
+please don 't hesitate to contact us.
+                        <FaQuoteRight/>
+<br/>
+<br/>
+Sincerely,
+<br/><br/>
+Plantpedia Team
+
+
+</Paragraph>
         </Container>
 </BgContainer>
     );
