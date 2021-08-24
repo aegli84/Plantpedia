@@ -16,6 +16,7 @@ background-size: 80vw 100vh;
 `
 
 const Container = styled.div `
+    
 @media  (max-width: 770px) {
     @media (max-width: 377px) {
     }
@@ -23,7 +24,7 @@ const Container = styled.div `
 
 const Header = styled.h1 `
     width: 23vw;
-    margin-top: 10px;
+    margin-top: 3vw;
     padding: 1.8vw;
     margin-left: 40vw;
     text-align: center;
