@@ -5,7 +5,8 @@ import styled from 'styled-components';
 const ContainerBox = styled.div `
     width: 20vw;
     height: 71vh;
-    padding: 34px;
+    padding: 2vw;
+    margin-top: 5vw;
     @media (max-width: 770px) {
         width: 30vw;
     }
