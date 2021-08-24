@@ -6,10 +6,9 @@ import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 import {makeStyles} from "@material-ui/styles";
 
-
 const Nav = styled.nav`
     background: black;
-    height: 62,5px;
+    height: 75px;
     width: 100vw;
     top: 0;
     display: flex;
@@ -17,7 +16,7 @@ const Nav = styled.nav`
     /* padding: 0.2rem calc((70vw - 1000px) / 2); */
     z-index: 12;
     padding-right: 50px;
-    position: sticky;
+    position: fixed;
 `;
 const NavLogo = styled(Link)`
     cursor: pointer;
@@ -28,7 +27,7 @@ const ImgLogo = styled.img`
     height: 65px;
     border-radius: 50%;
     margin-left: 50px;
-    
+    margin-top: 5px;
 @media screen and (max-width: 768px) { 
     display: none;
     }
@@ -80,6 +79,7 @@ const NavBtnLink = styled(Link)`
     transition: all 0.2s ease-in-out;
     text-decoration: none;
     margin-left: 24px;
+    
     &:hover {
         transition: all 0.2s ease-in-out;
         background: #fff;
@@ -94,14 +94,13 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
-const Navbar = ({totalItems}) => {
-    
+const Navbar = () => {
     const activeStyle = { color: ' #918EA4' };
     const classes = useStyles();
-
+    
     return (
         <>
-            <Nav >
+            <Nav  >
             <NavLogo to="/">
                 <ImgLogo src={logo}/>
             </NavLogo>
@@ -132,7 +131,7 @@ const Navbar = ({totalItems}) => {
                     <NavBtnLink to="/signup">Login or Register</NavBtnLink>                
                 </NavBtn>
                         <IconButton component={Link} to='/Cart' aria-label='Show cart items' color='inherit' >
-                            <Badge badgeContent={totalItems} classes={{badge: classes.badge}}>
+                            <Badge badgeContent={0}  classes={{badge: classes.badge}}>
                                 <ShoppingCart style={{ color: 'whitesmoke' }}/>
                             </Badge>
                         </IconButton>

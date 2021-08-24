@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import {Switch, Route} from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home';
@@ -28,6 +28,8 @@ import Activate from '../src/components/LoginRegisterForm/auth/Activate';
 import Forgot from '../src/components/LoginRegisterForm/auth/Forgot';
 
 
+
+import ScrollToTop from "./components/ScrollToTop";
 import Faqs from './pages/Faq';
 import Privacy from './pages/Privacy';
 
@@ -36,17 +38,14 @@ import Privacy from './pages/Privacy';
 
 function App() {
   
-
-
   return (
+    <>
     <div className="App">
-  
     <GlobalStyles/>
-    <Navbar />
+    <Navbar/>
     <NavBurgerMenu/> 
-
+    <ScrollToTop/>
       <Switch>
-
         <Route exact path="/">
           <Home />
         </Route>
@@ -59,7 +58,6 @@ function App() {
           <Guides />
         </Route>
 
-
         <Route path="/BoutiqueShops">
           <BoutiqueShops />
         </Route>
@@ -69,10 +67,12 @@ function App() {
         </Route>
 
         <Route path="/Cart">
-          <Cart />
+          <Cart 
+                    />
         </Route>
         <Route path="/Checkout">
-          <Checkout />
+          <Checkout 
+                    />
         </Route>
         <Route path="/Blog">
           <Blog />
@@ -122,7 +122,7 @@ function App() {
         <Route path="/Contact">
           <Contact />
         </Route> 
-
+      
         <Route path="/AboutUs">
           <AboutUsUi />
         </Route> 
@@ -145,11 +145,11 @@ function App() {
         </Route> 
 
 
-
     </Switch>
 
     <Footer/>
     </div>
+    </>
   );
 }
 
