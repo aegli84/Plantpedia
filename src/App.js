@@ -4,8 +4,8 @@ import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home';
 import Plantpedia from './pages/Plantpedia';
 import Guides from './pages/Guides';
-import BoutiqueShops from './pages/BoutiqueShops';
-import Subscription from './pages/Subscription';
+import OurPartners from './pages/OurPartners';
+import Shop from './pages/Shop';
 import Blog from './pages/Blog';
 import GlobalStyles from './GlobalStyles';
 import Footer from './components/Footer';
@@ -26,9 +26,6 @@ import Checkout from './pages/Checkout';
 import Contact from './pages/Contact'
 import Activate from '../src/components/LoginRegisterForm/auth/Activate';
 import Forgot from '../src/components/LoginRegisterForm/auth/Forgot';
-
-
-
 import ScrollToTop from "./components/ScrollToTop";
 import Faqs from './pages/Faq';
 import Privacy from './pages/Privacy';
@@ -58,12 +55,12 @@ function App() {
           <Guides />
         </Route>
 
-        <Route path="/BoutiqueShops">
-          <BoutiqueShops />
+        <Route path="/OurPartners">
+          <OurPartners />
         </Route>
 
-        <Route path="/Subscription">
-          <Subscription />
+        <Route path="/Shop">
+          <Shop />
         </Route>
 
         <Route path="/Cart">
